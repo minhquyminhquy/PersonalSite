@@ -1,7 +1,11 @@
 import { getBlogPost } from '@/lib/notion'
 import Link from 'next/link'
 
-export default async function BlogPost({ params }: { params: { id: string } }) {
+interface PageProps {
+  params: { id: string }
+}
+
+export default async function BlogPost({ params }: PageProps) {
   const post = await getBlogPost(params.id)
 
   if (!post) {
@@ -18,14 +22,11 @@ export default async function BlogPost({ params }: { params: { id: string } }) {
 
   const { page, blocks } = post
 
-  // You'll need to implement a function to render Notion blocks as HTML
   const renderBlocks = (blocks: any[]) => {
-    // Implement block rendering logic here
     return blocks.map((block: any) => {
       switch (block.type) {
         case 'paragraph':
           return <p key={block.id} className="mb-4">{block.paragraph.rich_text[0]?.plain_text || ''}</p>
-        // Add more cases for other block types
         default:
           return null
       }
@@ -50,4 +51,3 @@ export default async function BlogPost({ params }: { params: { id: string } }) {
     </div>
   )
 }
-

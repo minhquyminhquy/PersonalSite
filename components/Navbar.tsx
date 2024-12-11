@@ -10,7 +10,7 @@ export default function Navbar() {
   return (
     <nav className="bg-black p-4 fixed top-0 w-full z-50 shadow-md">
       <div className="container mx-auto flex justify-between items-center">
-        <h1 className="text-accentBrown text-2xl font-bold">Minh Quý</h1>
+        <h1 className="text-accentBrown text-2xl font-bold">Quy Le</h1>
         <div className="hidden md:flex space-x-6">
           <NavLinks />
         </div>

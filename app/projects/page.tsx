@@ -2,9 +2,9 @@ import Link from 'next/link'
 import Image from 'next/image'
 
 const projects = [
-  { id: 1, title: "Project 1", description: "Description of Project 1", image: "/placeholder.svg?height=200&width=300" },
-  { id: 2, title: "Project 2", description: "Description of Project 2", image: "/placeholder.svg?height=200&width=300" },
-  { id: 3, title: "Project 3", description: "Description of Project 3", image: "/placeholder.svg?height=200&width=300" },
+  { id: 1, title: "Project 1", description: "Description of Project 1", image: "/images/projects/project1.jpg" },
+  { id: 2, title: "Project 2", description: "Description of Project 2", image: "/images/projects/project2.jpg" },
+  { id: 3, title: "Project 3", description: "Description of Project 3", image: "/images/projects/project3.jpg" },
 ]
 
 export default function Projects() {

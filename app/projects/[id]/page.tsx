@@ -16,11 +16,11 @@ const projects = [
     ],
     githubLink: "https://github.com/yourusername/project1"
   },
-  // Add more projects here...
 ]
 
-export default function ProjectPage({ params }: { params: { id: string } }) {
-  const project = projects.find(p => p.id === parseInt(params.id))
+export default async function ProjectPage({ params }: { params: Promise<{ id: string }> }) {
+  const { id } = await params; 
+  const project = projects.find(p => p.id === parseInt(id))
 
   if (!project) {
     return <div>Project not found</div>
@@ -69,4 +69,3 @@ export default function ProjectPage({ params }: { params: { id: string } }) {
     </div>
   )
 }
-

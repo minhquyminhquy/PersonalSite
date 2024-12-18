@@ -5,16 +5,16 @@ import { Github } from 'lucide-react'
 const projects = [
   {
     id: 1,
-    title: "Project 1",
-    description: "Full overview of Project 1. This project aimed to solve X problem using Y technologies.",
+    title: "IPM-Optimizer",
+    description: "In PiMA mathematics summer camp 2024, my team (group 6) and I research Interior Point Method in solving Linear Programming problems in Convex Optimization. This project aimed to solve transportation problem, a popular example of linear programming problem, using Python from stratch. To visualize the results, we use matplotlib for contour plot.",
     image: "/placeholder.svg?height=400&width=600",
-    technologies: ["React", "Node.js", "MongoDB"],
+    technologies: ["Python", "Matplotlib", "Scipy", "LaTex"],
     takeaways: [
-      "Learned how to implement real-time data processing",
-      "Improved skills in database optimization",
-      "Gained experience in deploying to cloud platforms"
+      "Learned how to read literatures on mathematics",
+      "Improved team-work and communications skills",
+      "Gained experience in implementing scientific research paper results from stratch"
     ],
-    githubLink: "https://github.com/yourusername/project1"
+    githubLink: "https://github.com/minhquyminhquy/PiMA-2024-Group-6"
   },
 ]
 

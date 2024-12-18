@@ -5,8 +5,10 @@ const projects = [
   { id: 1, title: "IPM-Optimizer", description: "PiMA 2024 - Python Implementation of Interior Point Method for LP Problems", image: "/images/projects/PiMA-IPM.png" },
   { id: 2, title: "MediCopter", description: "Automated drone for medical supply transportation in rural areas, featuring brushless motors, GPS, obstacle detection using MobileNetSSD, and precise PID tuning for flight stability"
     , image: "/images/projects/medicopter-img.jpg" },
-  { id: 3, title: "ImNeuralPhysics: Solving Forward and Inverse Problems with PINN", description: "Implements a Physics Informed Neural Network (PINN) to solve both forward and inverse problems by integrating physical laws into the neural network framework.", image: "/images/pinns-illustration.png" },
-  { id: 4, title: "My Personal Website", description: "Build my first personal website using TypeScript and React.", image: "/images/personal-website.png" }
+  { id: 3, title: "NeuralPhysics: Solving Forward and Inverse Problems with PINN", description: "Implements a Physics Informed Neural Network (PINN) to solve both forward and inverse problems by integrating physical laws into the neural network framework.",
+     image: "/images/projects/pinns-illustration.png" },
+  { id: 4, title: "My Personal Website", description: "Build my first personal website using TypeScript and React."
+    , image: "/images/projects/personal-website.png" }
 ]
 
 export default function Projects() {

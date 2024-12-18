@@ -16,6 +16,45 @@ const projects = [
     ],
     githubLink: "https://github.com/minhquyminhquy/PiMA-2024-Group-6"
   },
+  {
+    id: 2,
+    title: "MediCopter",
+    description: "In the summer of 2023, I work with a clubmate to make a drone that can fly automatically from two coordinates. For the hardware, we use Raspberry Pi, for computation and control, and Pixhawk, for autopilot and flight management. For the software, we use dronekit, for controlling the drone's flight and navigation, TensorFlow Lite, for the obstacle detection model, and Flask, for real-time streaming during the flight.",
+    image: "/placeholder.svg?height=400&width=600",
+    technologies: ["Python", "TensorflowLite", "Flask", "Dronekit"],
+    takeaways: [
+      "Learned how to create robot using Raspberry Pi and Arduino",
+      "Learned how to pitch about the business idea from the drone",
+      "Gained experience in working with Python and different tools"
+    ],
+    githubLink: "https://github.com/minhquyminhquy/MediCopter-Drone"
+  },
+  {
+    id: 3,
+    title: "NeuralPhysics",
+    description: "",
+    image: "/placeholder.svg?height=400&width=600",
+    technologies: ["Python", "Tensorflow", "Matplotlib"],
+    takeaways: [
+      "Learned how to implement a research paper",
+      "Improve skills on training Deep Neural Networks",
+      "Gained experience in working with Python and different tools"
+    ],
+    githubLink: "https://github.com/minhquyminhquy/PINNs"
+  },
+  {
+    id: 4,
+    title: "My Personal Website",
+    description: "After learning about React and TypeScript in Freecodecamp, I made my first ever personal website to showcase that I have done so far!",
+    image: "/placeholder.svg?height=400&width=600",
+    technologies: ["TypeScript", "React"],
+    takeaways: [
+      "Learned how to build a website",
+      "Learned about organizing a website",
+      "Document my previous more carely"
+    ],
+    githubLink: "https://github.com/minhquyminhquy/PersonalSite"
+  }
 ]
 
 export default async function ProjectPage({ params }: { params: Promise<{ id: string }> }) {

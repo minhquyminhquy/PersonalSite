@@ -2,7 +2,8 @@ import Link from 'next/link'
 import Image from 'next/image'
 
 const projects = [
-  { id: 1, title: "IPM-Optimizer", description: "PiMA 2024 - Python Implementation of Interior Point Method for LP Problems", image: "/images/projects/PiMA-IPM.png" },
+  { id: 1, title: "IPM-Optimizer", description: "PiMA 2024 - Python Implementation of Interior Point Method for LP Problems"
+    , image: "/images/projects/PiMA-IPM.png" },
   { id: 2, title: "MediCopter", description: "Automated drone for medical supply transportation in rural areas, featuring brushless motors, GPS, obstacle detection using MobileNetSSD, and precise PID tuning for flight stability"
     , image: "/images/projects/medicopter-img.jpg" },
   { id: 3, title: "NeuralPhysics: Solving Forward and Inverse Problems with PINN", description: "Implements a Physics Informed Neural Network (PINN) to solve both forward and inverse problems by integrating physical laws into the neural network framework.",

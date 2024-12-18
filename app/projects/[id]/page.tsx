@@ -7,7 +7,7 @@ const projects = [
     id: 1,
     title: "IPM-Optimizer",
     description: "In PiMA mathematics summer camp 2024, my team (group 6) and I research Interior Point Method in solving Linear Programming problems in Convex Optimization. This project aimed to solve transportation problem, a popular example of linear programming problem, using Python from stratch. To visualize the results, we use matplotlib for contour plot.",
-    image: "/placeholder.svg?height=400&width=600",
+    image: "/images/projects/PiMA-IPM.png",
     technologies: ["Python", "Matplotlib", "Scipy", "LaTex"],
     takeaways: [
       "Learned how to read literatures on mathematics",
@@ -20,7 +20,7 @@ const projects = [
     id: 2,
     title: "MediCopter",
     description: "In the summer of 2023, I work with a clubmate to make a drone that can fly automatically from two coordinates. For the hardware, we use Raspberry Pi, for computation and control, and Pixhawk, for autopilot and flight management. For the software, we use dronekit, for controlling the drone's flight and navigation, TensorFlow Lite, for the obstacle detection model, and Flask, for real-time streaming during the flight.",
-    image: "/placeholder.svg?height=400&width=600",
+    image: "/images/projects/medicopter-img.jpg",
     technologies: ["Python", "TensorflowLite", "Flask", "Dronekit"],
     takeaways: [
       "Learned how to create robot using Raspberry Pi and Arduino",
@@ -33,7 +33,7 @@ const projects = [
     id: 3,
     title: "NeuralPhysics",
     description: "",
-    image: "/placeholder.svg?height=400&width=600",
+    image: "/images/projects/pinns-illustration.png",
     technologies: ["Python", "Tensorflow", "Matplotlib"],
     takeaways: [
       "Learned how to implement a research paper",
@@ -46,7 +46,7 @@ const projects = [
     id: 4,
     title: "My Personal Website",
     description: "After learning about React and TypeScript in Freecodecamp, I made my first ever personal website to showcase that I have done so far!",
-    image: "/placeholder.svg?height=400&width=600",
+    image: "/images/projects/personal-website.png",
     technologies: ["TypeScript", "React"],
     takeaways: [
       "Learned how to build a website",

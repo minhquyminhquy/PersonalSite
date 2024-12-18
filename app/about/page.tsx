@@ -3,7 +3,7 @@ import Link from 'next/link'
 import { Github, Linkedin, Mail } from 'lucide-react'
 
 export default function About() {
-  const skills = ['Python', 'C++', 'PyTorch', 'Machine Learning', 'Deep Learning', 'Computer Vision', 'PINNs']
+  const skills = ['Python', 'C++', 'Matlab', 'PyTorch', 'Machine Learning', 'Deep Learning', 'Computer Vision', 'PINNs']
 
   return (
     <div className="container mx-auto px-4">

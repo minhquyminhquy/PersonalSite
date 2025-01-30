@@ -2,14 +2,18 @@ import Link from 'next/link'
 import Image from 'next/image'
 
 const projects = [
-  { id: 1, title: "IPM-Optimizer", description: "PiMA 2024 - Python Implementation of Interior Point Method for LP Problems"
+  { id: 1, title: "MediCopter", description: "Automated drone for medical supply transportation in rural areas, featuring brushless motors, GPS, obstacle detection using MobileNetSSD, and precise PID tuning for flight stability"
+    , image: "/images/projects/medicopter-img.jpg"},
+  { id: 2, title: "What podcast Lex?", description: "Website to sugggest Lex Fridman podcast based on user preference",
+     image: "/images/projects/whatpodcastlex-demo.png" },
+  { id: 3, title: "My Personal Website", description: "Build my first personal website using TypeScript and React."
+    , image: "/images/projects/personal-website.png" },
+  { id: 4, title: "Thermal Energy Storage Modelling with Deep Learning", description: "Modelling thermal dynamics of charging phase in thermal energy storage using Deep Learning."
+    , image: "/images/projects/thermalstoragedesign-result.png"},
+  { id: 5, title: "Interior Point Optimizer", description: "Research project about Interior Point Method for solving Linear Programming problem."
     , image: "/images/projects/PiMA-IPM.png" },
-  { id: 2, title: "MediCopter", description: "Automated drone for medical supply transportation in rural areas, featuring brushless motors, GPS, obstacle detection using MobileNetSSD, and precise PID tuning for flight stability"
-    , image: "/images/projects/medicopter-img.jpg" },
-  { id: 3, title: "NeuralPhysics: Solving Forward and Inverse Problems with PINN", description: "Implements a Physics Informed Neural Network (PINN) to solve both forward and inverse problems by integrating physical laws into the neural network framework.",
-     image: "/images/projects/pinns-illustration.png" },
-  { id: 4, title: "My Personal Website", description: "Build my first personal website using TypeScript and React."
-    , image: "/images/projects/personal-website.png" }
+  { id: 6, title: "League of Legends Match Predictor", description: "PyTorch model predict the outcome of LOL match based on match stats."
+    , image: "/images/projects/PiMALOL-match-predictor.png" }
 ]
 
 export default function Projects() {

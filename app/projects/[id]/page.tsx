@@ -6,7 +6,7 @@ const projects = [
   {
     id: 1,
     title: "MediCopter",
-    description: "In the summer of 2023, I work with a clubmate to make a drone that can fly automatically from two coordinates. For the hardware, we use Raspberry Pi, for computation and control, and Pixhawk, for autopilot and flight management. For the software, we use dronekit, for controlling the drone's flight and navigation, TensorFlow Lite, for the obstacle detection model, and Flask, for real-time streaming during the flight.",
+    description: "In the summer of 2023, I worked with a clubmate to make a drone that can fly automatically from two coordinates. For the hardware, we use Raspberry Pi, for computation and control, and Pixhawk, for autopilot and flight management. For the software, we use dronekit, for controlling the drone's flight and navigation, TensorFlow Lite, for the obstacle detection model, and Flask, for real-time streaming during the flight.",
     image: "/images/projects/medicopter_img.jpg",
     technologies: ["Python", "TensorflowLite", "Flask", "Dronekit"],
     takeaways: [
@@ -19,7 +19,7 @@ const projects = [
   {
     id: 2,
     title: "What podcast Lex?",
-    description: "This is my projet for SideQuest 2025. In my commute to school, I often wonder which Lex Fridman podcast should I listen, and always end up listen to those not my interest. I address this by building a website to suggest Lex Fridman podcast based on user interest, saving them from boring podcasts!",
+    description: "This is my project for SideQuest 2025. In my daily commute to school, I often wonder which Lex Fridman podcast should I listen, and always end up listen to those not my interest. I address this by building a website to suggest Lex Fridman podcast based on user interest, saving them from boring podcasts!",
     image: "/images/projects/whatpodcastlex-demo.png",
     technologies: ["Python", "Flask", "Scikit-learn (TfidfVectorizer)", "React", "TypeScript"],
     takeaways: [

@@ -7,7 +7,7 @@ import Footer from '@/components/Footer'
 const nunito = Nunito({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Minh Quý - Personal Website',
+  title: 'Quy Le',
   description: 'A Researcher & CS Freshman passionate about AI and Machine Learning',
 }
 

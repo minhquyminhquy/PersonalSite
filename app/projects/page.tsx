@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 const projects = [
   { id: 1, title: "MediCopter", description: "Automated drone for medical supply transportation in rural areas, featuring brushless motors, GPS, obstacle detection using MobileNetSSD, and precise PID tuning for flight stability"
-    , image: "/images/projects/medicopter-img.jpg"},
+    , image: "/images/projects/medicopter_img.jpg"},
   { id: 2, title: "What podcast Lex?", description: "Website to sugggest Lex Fridman podcast based on user preference",
      image: "/images/projects/whatpodcastlex-demo.png" },
   { id: 3, title: "My Personal Website", description: "Build my first personal website using TypeScript and React."
@@ -13,7 +13,7 @@ const projects = [
   { id: 5, title: "Interior Point Optimizer", description: "Research project about Interior Point Method for solving Linear Programming problem."
     , image: "/images/projects/PiMA-IPM.png" },
   { id: 6, title: "League of Legends Match Predictor", description: "PyTorch model predict the outcome of LOL match based on match stats."
-    , image: "/images/projects/PiMALOL-match-predictor.png" }
+    , image: "/images/projects/LOL-match-predictor.png" }
 ]
 
 export default function Projects() {

@@ -7,7 +7,7 @@ const projects = [
     id: 1,
     title: "MediCopter",
     description: "In the summer of 2023, I work with a clubmate to make a drone that can fly automatically from two coordinates. For the hardware, we use Raspberry Pi, for computation and control, and Pixhawk, for autopilot and flight management. For the software, we use dronekit, for controlling the drone's flight and navigation, TensorFlow Lite, for the obstacle detection model, and Flask, for real-time streaming during the flight.",
-    image: "/images/projects/medicopter-img.jpg",
+    image: "/images/projects/medicopter_img.jpg",
     technologies: ["Python", "TensorflowLite", "Flask", "Dronekit"],
     takeaways: [
       "Learned how to create UAV using Raspberry Pi",
@@ -77,7 +77,7 @@ const projects = [
     takeaways: [
       "Learned implement Logistic Regression in PyTorch",
       "Now I know why I lose all these League match back in high school",
-      "Gain intuition about feature selection"
+      "Gain intuition about feature selection"  
     ],
     githubLink: "https://github.com/minhquyminhquy/LOL-match-predictor"
   }

@@ -1,8 +1,8 @@
 # Personal Portfolio Website
 
-A modern, responsive portfolio website for software engineering students and professionals. Showcase your projects, skills, and experience to potential employers.
+A personal website where I showcase what I have done, what I am doing, and what I want to achieve.
 
-![Portfolio Preview](public/portfolio-preview.png)
+![Portfolio Preview](public/images/projects/personal-website-cover.png)
 
 ## Features
 

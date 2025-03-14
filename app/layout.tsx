@@ -1,14 +1,16 @@
-import './globals.css'
-import type { Metadata } from 'next'
-import { Nunito } from 'next/font/google'
-import Navbar from '@/components/Navbar'
-import Footer from '@/components/Footer'
+import type React from "react"
+import "@/app/globals.css"
+import { Inter } from "next/font/google"
+import { ThemeProvider } from "@/components/theme-provider"
+import Navbar from "@/components/navbar"
+import Footer from "@/components/footer"
+import { Toaster } from "@/components/ui/toaster"
 
-const nunito = Nunito({ subsets: ['latin'] })
+const inter = Inter({ subsets: ["latin"] })
 
-export const metadata: Metadata = {
-  title: 'Quy Le',
-  description: 'A Researcher & CS Freshman passionate about AI and Machine Learning',
+export const metadata = {
+  title: "Quy Le - Software Engineer",
+  description: "Personal portfolio of Quy Le, an undergraduate student and aspiring software engineer."
 }
 
 export default function RootLayout({
@@ -17,15 +19,21 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className="scroll-smooth">
-      <body className={`${nunito.className} bg-darkBase text-white`}>
-        <Navbar />
-        <main className="min-h-screen pt-24">
-          {children}
-        </main>
-        <Footer />
+    <html lang="en" suppressHydrationWarning>
+      <body className={inter.className}>
+        <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
+          <div className="flex min-h-screen flex-col">
+            <Navbar />
+            <main className="flex-1">{children}</main>
+            <Footer />
+          </div>
+          <Toaster />
+        </ThemeProvider>
       </body>
     </html>
   )
 }
 
+
+
+import './globals.css'

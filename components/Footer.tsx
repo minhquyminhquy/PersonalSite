@@ -1,29 +1,41 @@
-import Link from 'next/link'
-import { Github, Linkedin, Mail } from 'lucide-react'
+import Link from "next/link"
+import { Github, Linkedin, Mail } from "lucide-react"
 
 export default function Footer() {
   return (
-    <footer className="bg-gray-900 text-white py-8">
+    <footer className="border-t py-8">
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="mb-4 md:mb-0">
-            <h2 className="text-2xl font-bold text-accentBrown">Quy Le</h2>
-            <p className="text-sm mt-2">Researcher & CS Freshman</p>
+            <p className="text-sm text-muted-foreground">
+              © {new Date().getFullYear()} Quy Le. All rights reserved.
+            </p>
           </div>
-          <div className="flex space-x-4">
-            <Link href="https://github.com/minhquyminhquy" target="_blank" rel="noopener noreferrer">
-              <Github className="w-6 h-6 hover:text-accentBrown transition-colors" />
+
+          <div className="flex items-center space-x-4">
+            <Link
+              href="https://github.com/minhquyminhquy"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-muted-foreground hover:text-primary"
+            >
+              <Github className="h-5 w-5" />
+              <span className="sr-only">GitHub</span>
             </Link>
-            <Link href="https://www.linkedin.com/in/quy-m-le/" target="_blank" rel="noopener noreferrer">
-              <Linkedin className="w-6 h-6 hover:text-accentBrown transition-colors" />
+            <Link
+              href="https://linkedin.com/in/quy-m-le"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-muted-foreground hover:text-primary"
+            >
+              <Linkedin className="h-5 w-5" />
+              <span className="sr-only">LinkedIn</span>
             </Link>
-            <Link href="mailto:quylm.work@gmail.com">
-              <Mail className="w-6 h-6 hover:text-accentBrown transition-colors" />
+            <Link href="mailto:quylm.work@gmail.com" className="text-muted-foreground hover:text-primary">
+              <Mail className="h-5 w-5" />
+              <span className="sr-only">Email</span>
             </Link>
           </div>
-        </div>
-        <div className="mt-8 text-center text-sm">
-          © {new Date().getFullYear()} Quy Le. All rights reserved.
         </div>
       </div>
     </footer>

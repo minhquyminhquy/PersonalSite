@@ -1,42 +1,64 @@
-import Link from 'next/link'
-import Image from 'next/image'
+import Link from "next/link"
+import { Button } from "@/components/ui/button"
+import { ArrowLeft, Github } from "lucide-react"
+import { Badge } from "@/components/ui/badge"
+import { projects } from "@/data/projects"
 
-const projects = [
-  { id: 1, title: "MediCopter", description: "Automated drone for medical supply transportation in rural areas, featuring brushless motors, GPS, obstacle detection using MobileNetSSD, and precise PID tuning for flight stability"
-    , image: "/images/projects/medicopter_img.jpg"},
-  { id: 2, title: "What podcast Lex?", description: "Website to sugggest Lex Fridman podcast based on user preference",
-     image: "/images/projects/whatpodcastlex-demo.png" },
-  { id: 3, title: "My Personal Website", description: "Build my first personal website using TypeScript and React."
-    , image: "/images/projects/personal-website.png" },
-  { id: 4, title: "Thermal Energy Storage Modelling with Deep Learning", description: "Modelling thermal dynamics of charging phase in thermal energy storage using Deep Learning."
-    , image: "/images/projects/thermalstoragedesign-result.png"},
-  { id: 5, title: "Interior Point Optimizer", description: "Research project about Interior Point Method for solving Linear Programming problem."
-    , image: "/images/projects/PiMA-IPM.png" },
-  { id: 6, title: "League of Legends Match Predictor", description: "PyTorch model predict the outcome of LOL match based on match stats."
-    , image: "/images/projects/LOL-match-predictor.png" }
-]
-
-export default function Projects() {
+export default function ProjectsPage() {
   return (
-    <div className="container mx-auto px-4">
-      <h1 className="text-3xl font-bold mb-6">My Projects</h1>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+    <div className="container mx-auto px-4 py-8">
+      <div className="mb-8">
+        <Button variant="ghost" asChild>
+          <Link href="/">
+            <ArrowLeft className="mr-2 h-4 w-4" /> Back to Home
+          </Link>
+        </Button>
+      </div>
+
+      <h1 className="text-4xl font-bold mb-6">My Projects</h1>
+      <p className="text-lg text-muted-foreground mb-10 max-w-3xl">
+        Here are some of the projects I've worked on. Each project has helped me develop different skills and tackle
+        unique challenges, even on different fields!
+      </p>
+
+      <div className="space-y-16">
         {projects.map((project) => (
-          <Link href={`/projects/${project.id}`} key={project.id} className="group">
-            <div className="bg-gray-800 rounded-lg overflow-hidden transition-transform transform hover:scale-105">
-              <Image
-                src={project.image}
-                alt={project.title}
-                width={300}
-                height={200}
-                className="w-full h-48 object-cover"
-              />
-              <div className="p-4">
-                <h2 className="text-xl font-semibold mb-2 group-hover:text-accentBrown transition-colors">{project.title}</h2>
-                <p className="text-lightGray">{project.description}</p>
+          <div key={project.id} className="border rounded-xl overflow-hidden">
+            <div className="grid md:grid-cols-2 gap-6">
+              <div className="bg-muted h-64 md:h-auto">
+                <img
+                  src={project.image || "/placeholder.svg"}
+                  alt={project.title}
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="p-6">
+                <h2 className="text-2xl font-bold mb-2">{project.title}</h2>
+                <p className="text-muted-foreground mb-4">{project.description}</p>
+
+                <div className="mb-4">
+                  <h3 className="text-sm font-medium mb-2">Technologies Used:</h3>
+                  <div className="flex flex-wrap gap-2">
+                    {project.technologies.map((tech) => (
+                      <Badge key={tech} variant="secondary">
+                        {tech}
+                      </Badge>
+                    ))}
+                  </div>
+                </div>
+
+                <div className="flex mt-6">
+                  {project.github && (
+                    <Button size="sm" asChild>
+                      <Link href={project.github} target="_blank" rel="noopener noreferrer">
+                        <Github className="mr-2 h-4 w-4" /> View on GitHub
+                      </Link>
+                    </Button>
+                  )}
+                </div>
               </div>
             </div>
-          </Link>
+          </div>
         ))}
       </div>
     </div>

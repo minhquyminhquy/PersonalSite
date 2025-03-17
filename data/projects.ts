@@ -7,7 +7,7 @@ export const projects: Project[] = [
     description:
       "A web application that transcribes SWE meetings, extract key decisions, and generates structured summaries from meeting recordings.",
     image: "/images/projects/swe-meeting-assistant-cover.png",
-    technologies: ["Flask", "OpenAI", "MySQL"],
+    technologies: ["Flask", "HTML/CSS", "JavaScript", "OpenAI", "SQLAlchemy"],
     github: "https://github.com/minhquyminhquy/SWE-Meeting-Assistant",
     demo: null,
   },
@@ -17,7 +17,7 @@ export const projects: Project[] = [
     description:
       "A personal website where I showcase what I have done, what I am doing, and what I want to achieve.",
     image: "/images/projects/personal-website-cover.png",
-    technologies: ["Next.js", "TypeScript", "Tailwind CSS"],
+    technologies: ["Next.js", "React", "TypeScript", "Tailwind CSS"],
     github: "https://github.com/minhquyminhquy/PersonalSite",
     demo: "https://quyle.dev",
   },
@@ -27,7 +27,7 @@ export const projects: Project[] = [
     description:
       "A web application that suggest Lex Fridman Podcast based on user interest.",
     image: "/images/projects/whatpodcastlex-cover.png",
-    technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Flask", "Sklearn"],
+    technologies: ["Next.js", "React", "TypeScript", "Tailwind CSS", "Flask", "Sklearn"],
     github: "https://github.com/minhquyminhquy/What-Podcast-Lex",
     demo: null,
   },

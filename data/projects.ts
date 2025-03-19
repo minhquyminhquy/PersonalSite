@@ -38,7 +38,7 @@ export const projects: Project[] = [
       "Au automated drone for medical supply transportation in rural areas.",
     image: "/images/projects/medicopter-cover.jpg",
     technologies: ["Raspberry Pi", "Pixhawk","DroneKit", "Flask","PyMAVLink","Tensorflow"],
-    github: "https://github.com/alexchen/health-tracker-api",
+    github: "",
     demo: null,
   },
   {
